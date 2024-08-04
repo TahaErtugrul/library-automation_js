@@ -14,6 +14,8 @@ export class LoginPage extends BasePage {
       "//button[text()='Sign in' and @type='submit']"
     );
     
+    this.loginErrorMessage = page.locator("//div[@class='alert alert-danger']");
+
   }
 
   /**
